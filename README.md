@@ -1,7 +1,7 @@
 # Vanillajs-Projects
 
 
-Hi , this is 50 mini projects in HTML, CSS & JavaScript that relate to the DOM (Document Object Model).
+Hi , this is mini projects in HTML, CSS & JavaScript that relate to the DOM (Document Object Model).
 
 
 
