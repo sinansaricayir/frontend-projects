@@ -1,4 +1,4 @@
-# Vanilla JS-Projects
+# Front-end Projects
 
 
 Hi , this is mini projects in HTML, CSS & JavaScript that relate to the DOM (Document Object Model).
