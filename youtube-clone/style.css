@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #0F0F0F;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+/* ! header start */
+
+header {
+    position: fixed;
+    z-index: 11;
+    width: 100%;
+    background-color: #0F0F0F;
+}
+
+.header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    height: 60px;
+    border-bottom: 1px solid #717171;
+}
+
+header i {
+    font-size: 20px;
+}
+
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-youtube {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    column-gap: 2px;
+}
+
+
+.header-left h3 {
+    font-weight: 300;
+    font-size: 18px;
+    color: white;
+}
+
+.header-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-search {
+    border: 1px solid #717171;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    margin-right: 10px;
+}
+
+.header-search input {
+    background-color: #0F0F0F;
+    border: none;
+    outline: none;
+    width: 600px;
+}
+
+.header-center .bi-search {
+    font-size: 18px;
+    margin-right: 4px;
+    cursor: pointer;
+}
+
+.header-center .bi-mic-fill {
+    background-color: #121212;
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+.header-center .bi-mic-fill:hover {
+    background-color: #342A28;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+.header-right .avatar {
+    height: 32px;
+    width: 32px;
+}
+
+.header-right .avatar img {
+    width: 100%;
+    border-radius: 100%;
+}
+
+/* ! header end */
+
+.content {
+    display: flex;
+    margin-top: 60px;
+}
+
+/* ! sidebar start */
+
+.sidebar {
+    position: fixed;
+    z-index: 10;
+    background-color: #0F0F0F;
+    height: 100vh;
+    width: 100px;
+    border-right: 1px solid #717171;
+    padding-top: 20px;
+}
+
+.sidebar-item {
+    margin-top: 8px;
+}
+
+.sidebar-item a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+
+.sidebar-item a:hover>* {
+    color: #ff0000;
+    transition: all 0.3s ease;
+}
+
+.sidebar i {
+    font-size: 20px;
+}
+
+.sidebar-item span {
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/* ! sidebar end */
+
+
+
+/* ! videos start */
+
+.videos {
+    margin: 20px 20px 20px 120px;
+    flex: 1;
+}
+
+.video-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    list-style: none;
+}
+
+
+.video-list-item .video-image {
+    position: relative;
+    display: flex;
+
+}
+
+.video-list-item .video-image img {
+    width: 100%;
+}
+
+.video-list-item .video-image span {
+    position: absolute;
+    bottom: 6px;
+    right: 3px;
+    background-color: #121212;
+    font-size: 12px;
+    padding: 0 4px;
+}
+
+.video-list .video-texts {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    row-gap: 2px;
+}
+
+.video-texts a {
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.video-texts span {
+    color: #717171;
+    font-size: 10px;
+}
+
+
+
+/* ! videos end */
+
+
+
+/* ? responsive */
+
+@media(max-width:1200px) {
+
+    .header-search input {
+        width: 350px;
+    }
+
+    .video-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+
+@media(max-width:900px) {
+
+    .header-search input {
+        width: 250px;
+    }
+
+    .video-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+
+@media(max-width:700px) {
+
+    .header-search input {
+        width: 150px;
+    }
+
+    .header-center .bi-mic-fill {
+        display: none;
+    }
+
+    .header-right {
+        display: none;
+    }
+}
